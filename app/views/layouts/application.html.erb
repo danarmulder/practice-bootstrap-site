@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>UberForTurkeys</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class="container">
+
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="#">Uber for Turkeys</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#">Dana Mulder</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
+<div class="alert alert-success" role="alert">
+  <h4>Thanksgiving is only 20 days away!</h4>
+</div>
+
+<div class="page-header">
+  <h1>Uber for Turkeys! <small>Turkeys delivered to your door!</small></h1>
+</div>
+
+<ul class="nav nav-tabs">
+  <li role="presentation" class="active"><a href="#">Home</a></li>
+  <li role="presentation"><a href="#">Profile</a></li>
+  <li role="presentation"><a href="#">Messages</a></li>
+</ul>
+
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Uber</a></li>
+  <li><a href="#">Holiday Events</a></li>
+  <li class="active">Uber for Turkeys</li>
+</ol>
+
+<div class="jumbotron">
+  <h1>GOBBLE GOBBLE!</h1>
+  <p></p>
+  <p class="lead"><a class="btn btn-primary btn-lg" href="#" role="button">Learn more on how to get your own Turkey!</a></p>
+</div>
+
+<div class="panel panel-primary">
+  <div class="panel-heading">
+    <h3 class="panel-title">Turkey Sizes</h3>
+  </div>
+  <div class="panel-body">
+    Large - Medium - Small
+  </div>
+</div>
+
+<div class="row">
+  <div class="col-md-6">Thanksgiving Day is a national holiday celebrated primarily in the United States and Canada as a day of giving thanks for the blessing of the harvest and of the preceding year. Several other places around the world observe similar celebrations. It is celebrated on the fourth Thursday of November in the United States and on the second Monday of October in Canada. Thanksgiving has its historical roots in religious and cultural traditions, and has long been celebrated in a secular manner as well.</div>
+  <div class="col-md-6">Prayers of thanks and special thanksgiving ceremonies are common among almost all religions after harvests and at other times.[2] The Thanksgiving holiday's history in North America is rooted in English traditions dating from the Protestant Reformation. It also has aspects of a harvest festival, even though the harvest in New England occurs well before the late-November date on which the modern Thanksgiving holiday is celebrated.</div>
+</div>
+
+<div class="well">Thanksgiving is on November 27th!</div>
+
+<div class="row">
+  <div class="col-md-4"><p class="text-left">In the English tradition, days of thanksgiving and special thanksgiving religious services became important during the English Reformation in the reign of Henry VIII and in reaction to the large number of religious holidays on the Catholic calendar.</p></div>
+  <div class="col-md-4"><p class="text-center">Before 1536 there were 95 Church holidays, plus 52 Sundays, when people were required to attend church and forego work and sometimes pay for expensive celebrations.</p></div>
+  <div class="col-md-4"><p class="text-right">The 1536 reforms reduced the number of Church holidays to 27, but some Puritans wished to completely eliminate all Church holidays, including Christmas and Easter. </p></div>
+</div>
+
+<table class="table table-bordered table-striped">
+  <tr>
+    <td>Large</td>
+    <td>12+ lbs</td>
+    <td>$40</td>
+  </tr>
+  <tr>
+    <td>Medium</td>
+    <td>9-12 lbs</td>
+    <td>$30</td>
+  </tr>
+  <tr>
+    <td>Small</td>
+    <td>Under 9 lbs</td>
+    <td>$20</td>
+  </tr>
+</table>
+</table>
+<%= yield %>
+
+</div>
+
+</body>
+</html>
